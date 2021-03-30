@@ -1,0 +1,61 @@
+.play-tabar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #e4e0e0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #fff;
+}
+.play-tabar .img-box {
+  flex: 0 0 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 35px;
+}
+.play-tabar .img-box img {
+  display: block;
+}
+.play-tabar .text-container {
+  flex: 1;
+  padding-left: 5px;
+}
+.play-tabar .text-container .name {
+  font-size: 14px;
+}
+.play-tabar .text-container .singer {
+  font-size: 12px;
+}
+.play-tabar .menu {
+  flex: 0 0 30px;
+  margin-left: 15px;
+}
+.play-tabar .menu .iconfont {
+  font-size: 30px;
+}
+.play-tabar .play {
+  flex: 0 0 30px;
+}
+.play-tabar .play .iconfont {
+  font-size: 30px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 15s linear 0s infinite;
+}
+.animation-play-paused {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  /* Safari 和 Chrome */
+}

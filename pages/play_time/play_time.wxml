@@ -1,0 +1,19 @@
+<view class='swiHeader'>
+        <swiper autoplay indicator-dots>
+                <swiper-item class="swiItem" wx:for="{{imageList}}" wx:key="*this">
+                        <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2676935521,922112450&fm=11&gp=0.jpg" mode="widthFix"></image>
+                </swiper-item>
+        </swiper>
+</view>
+
+<view class="viewList">
+      <view class="viewItem" bindtap="toMusic">
+              音乐
+      </view> 
+      <view class="viewItem" bindtap="toVideo">
+              视频
+      </view>
+      <view class="viewItem" bindtap="toTalk">
+             论坛
+      </view>
+</view>

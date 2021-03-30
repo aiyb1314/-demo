@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "play-list": "/components/play_list/play_list"
+  },
+  "navigationBarTitleText": "播放"
+}

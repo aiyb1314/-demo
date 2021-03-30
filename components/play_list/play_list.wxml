@@ -1,0 +1,29 @@
+<view class="playlist" wx:if="{{display}}">
+    <view class="background" bind:tap="close"></view>
+    <view class="list-wrapper">
+        <view class="list-header">
+            <view class="title">
+                <icon class="iconfont {{playMode_class}}" bind:tap="select_palyMode"></icon>
+                <view class="text"></view>
+                <view class="clear" bind:tap="emptySongList">
+                    <icon class="iconfont icon-saochu"></icon>
+                </view>
+            </view>
+        </view>
+        <scroll-view class="list-content" scroll-y="true">
+            <view class="item" wx:for="{{songList}}" wx:key="id" wx:for-index="index" >
+                <view class="i-play">
+                    <icon class="{{currentIndex === index?'current':''}} iconfont icon-bofang"></icon>
+                </view>
+                
+                <view class="text" bind:tap="selectSong" data-song="{{item}}">
+                    <text>{{item.name}}</text>
+                    <text class="singer">-{{item.singer}}</text>
+                </view>
+                <view class="delete" bind:tap="_deleteSong" data-index="{{index}}">
+                    <icon class="iconfont icon-shanchu "></icon>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

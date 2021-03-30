@@ -1,0 +1,123 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.eot?t=1616765182487'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.eot?t=1616765182487#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMgAAsAAAAABuQAAALUAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBRIFfATYCJAMMCwgABCAFhG0HQBsvBsgOJSHBwACgAGBlPHyNtfd39xCxJN5Up5NEGyRCoXuC2EhkQiF7Cfe/uvT7HHB8AdpQAYQCgk+WfT6SRQXAYe2w8UhbpzBs3TrldW0MuJz+fwUUyDzLclnbxp48JmCCgY41KNCACiQgbxi74AUeJtBgRANtf/fBk2Ao7FGBuPFcC4yCT1FYsk6oaVhYxCskq0vPgVEAL9H34x/awiCpZPbEg+tdNox8wZ9u/cHWAxcDAvwgwOUVZMwChbhsjB3TBWPqGjRJ3dk1ipCWCm5ViSSGruagf7xE1LALm8AkjCe+eHyCr+4lEsigJkmsAFeI0bV9SE39+e7c3KmFhTPz86dnZ2+f/rVQvjBvXGa+mh2YXTz1Y+5U8PXC8KmQ+Xt+aH7hzK+FYPB9ziZny1rva2eEOKM5wkDk204Lmb2dhJ62zKnVVw2xAhiZVWcvifYRzdjyG5avXE2Fs6tx3jaipa2GK79NrX74bvi4IXz4dPLGiRO2VdVtMFx/8FgVCfj1+OgBqwqusoemj8BhgOpmfqSbP/o3+lvfb7+SNfDPCBbweaf9j4ZUNwvkBtTdhj34rdKBLcWQ2/pcNIknsRzZ3MRoQoPhVAXb1WF9uq57cCGhTneGpNYwsjqjZGHMoqLRPGrU2UKDGXuWN+rE6aLUY9pTgNDmI5IWb8jajJGFsYaKHn9Roy10NDiMvA0bjYdn7uDEksRGoZvIwzThuEZpxsXHiatiFs/LI9ZpwoUXRK1NLeXkHpIgfIkp4prbJqWDHE7jaDc4jsRiFPmcRgiWTWEp/b7mZqfpRU2YxsG0hyMsEmFDQm5CPBiV4ATdJbPy+eMIlxJj4R0VdcHTCE7wekdaNWkZQO7RJAZVPMozwjWuNpLkQBwcFYfsBv2ImBgK8Zv7RRCY1CQ8IeLr0+x0coZqmrbXxX+gmNVgT8qRIkfRfKushO15Mxox9W+mCKqEogA=') format('woff2'),
+  url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.woff?t=1616765182487') format('woff'),
+  url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.ttf?t=1616765182487') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2432611_ap30u8mh2c.svg?t=1616765182487#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yuandian-copy:before {
+  content: "\e600";
+  color:yellowgreen;
+}
+
+.icon-sousuo:before {
+  content: "\e615";
+}
+
+
+.testContainer {
+  display: flex;
+  flex-flow: nowrap;
+  height: 80rpx;
+}
+
+.cityCss{
+  padding-left: 30rpx;
+  margin-bottom: 30rpx;
+  margin-right: 30rpx;
+  line-height: 80rpx;
+}
+
+.sContainer{
+  display: flex;
+  background-color:rgb(252,252,252);
+  width: 60%;
+}
+
+.containerView{
+    line-height: 60rpx;
+    background-color: rgb(7,193,96);
+    color: white;
+    height: 60rpx;
+    margin-top: 10rpx;
+    width: 100rpx;
+    text-align: center;
+    border-radius: 30rpx;
+}
+
+.routerInput{
+    height: 80rpx;
+    margin-left: 10rpx;
+}
+
+.dis{
+  display: none;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80rpx;
+}
+
+.middle .middleItem{
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.action {
+  border-bottom: red 3rpx solid;
+}
+
+.footer{
+  width: 700rpx;
+  height: 80rpx;
+  background-color:rgb(242,241,237);
+  border: 2rpx solid rgb(242,241,237);
+  border-radius: 20rpx;
+  margin: 0 auto;
+}
+
+.footer .swiperItem{
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.orderBtn{
+    background-color: red;
+    border-radius: 20rpx;
+    width: 400rpx;
+    height: 60rpx;
+    color: white;
+    line-height: 60rpx;
+    margin-left: 180rpx;
+    text-align: center;
+    margin-top: 10rpx;
+}
+
+
+.icon{
+    text-align: center;
+}
+
+
+.icon-sousuo{
+  font-size: 40rpx;
+  line-height: 80rpx;
+  padding-top: 4rpx;
+}
+
+.orderParking{
+  margin-top: 30rpx;
+}

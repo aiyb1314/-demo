@@ -1,0 +1,19 @@
+// 使用var定义一个json开头 将所有的过滤器写在unit中
+var unit = {
+    // 定义一个函数作为过滤器 参数text为传来的原始值
+    get_M_S: function(e) {
+        var m;
+        var s;
+        m = Math.floor(e / 60);
+        s = Math.floor(e % 60);
+        if (s < 10) {
+            s = "0" + s;
+        }
+        return m + ":" + s;
+    }
+  }
+  // 导出过滤器 这段代码必写
+  module.exports = {
+    // 格式为 导出的名字: json名字.函数名字 
+    get_M_S: unit.get_M_S
+  }

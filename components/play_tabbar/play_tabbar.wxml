@@ -1,0 +1,16 @@
+<view class="play-tabar" wx:if="{{currentSong.name}}">
+    <view class="img-box spin {{playSatu ? '':'animation-play-paused'}}" bind:tap="toPlay">
+        <image src="{{currentSong.picUrl}}" mode="widthFix" />
+    </view>
+    <view class="text-container">
+        <view class="name">{{currentSong.name}}</view>
+        <view class="singer">{{currentSong.singer}}</view>
+    </view>
+    <view class="play" bind:tap="selectPlay">
+        <icon class="iconfont {{playSatu ? 'icon-zantingtingzhi' : 'icon-bofang'}}"></icon>
+    </view>
+    <view class="menu" bind:tap="on_playList">
+        <icon class="iconfont icon-caidan"></icon>
+    </view>
+</view>
+<play-list id="play-list"></play-list>

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "search-navigator":"/components/search-navigator/search-navigator"
+    },
+    "navigationBarTitleText": "推荐"
+}

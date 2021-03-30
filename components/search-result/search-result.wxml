@@ -1,0 +1,78 @@
+<scroll-view class="scroll-view" bindscrolltolower="updata" scroll-y="true">
+    <view class="m-searchresult">
+        <view class="m-matchlist">
+            <h3 class="title">最佳匹配</h3>
+            <view>
+                <!-- 歌手 -->
+                <navigator url="/pages/album/album?id={{item.id}}" class="matchitem artist" wx:for="{{multimatch.artist}}" wx:key="id">
+                    <view class="linkcover f-bd f-bd-btm">
+                        <view class="piccover">
+                            <image class="pic" src="{{item.img1v1Url}}" mode="widthFix" />
+                        </view>
+                        <view class="describe">
+                            <view class="maindes f-thide">
+                                歌手:
+                                <view class="hcover">{{item.name}}</view>
+                            </view>
+                        </view>
+                        <i class="u-svg u-svg-arr"></i>
+                    </view>
+                </navigator>
+                <!-- mv -->
+                <navigator url="/pages/mv/detail/detail?id={{item.id}}" class="matchitem mv" wx:for="{{multimatch.mv}}" wx:key="id" bindtap="go_mv">
+                    <view class="linkcover f-bd f-bd-btm">
+                        <view class="piccover">
+                            <image class="pic" src="{{item.cover}}" mode="widthFix" />
+                        </view>
+                        <view class="describe">
+                            <view class="maindes f-thide">
+                                MV:
+                                <view class="hcover">
+                                    <text class="highlight">{{item.name}}</text>
+                                </view>
+                            </view>
+                            <view class="hcover addtional f-thide">
+                                <text>{{item_artists.name}}</text>
+                            </view>
+                        </view>
+                        <i class="u-svg u-svg-arr"></i>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <!-- 歌曲列表 -->
+        <view class="m-songlist">
+            <view class="m-sglst">
+                <view class="m-sgitem" wx:for="{{songList}}" wx:key="id" bind:tap="paly" data-id="{{item.id}}">
+                    <view class="sgfr f-bd f-bd-btm">
+                        <view class="sgchfl">
+                            <view class="f-thide sgtl">
+                                <view class="hcover">
+                                    <text>
+                                        <text class="highlight">{{item.name}}</text>
+                                    </text>
+                                    <text></text>
+                                </view>
+                            </view>
+                            <view class="f-thide sginfo">
+                                <view class="hcover">
+                                    <text>{{item_artists.name}}</text>
+                                </view>
+                                -
+                                <view class="hcover">
+                                    <text>
+                                        <text class="highlight">{{item.album.name}}</text>
+                                    </text>
+                                    <text></text>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="sgchfr">
+                            <text class="icon-bofang iconfont sgchply"></text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

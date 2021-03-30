@@ -1,0 +1,6 @@
+{
+    "usingComponents": {},
+    "navigationBarTitleText": "MV",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle":"dark"
+  }

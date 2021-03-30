@@ -1,0 +1,16 @@
+<wxs module="filter" src="../../../filter/filter.wxs" />
+<view class="m-homeremd">
+    <!-- recommend -->
+    <view class="remd_tl">推荐</view>
+    <view class="remd_songs">
+        <view class="remd_ul">
+            <navigator url="/pages/mv/detail/detail?id={{item.id}}"  class="remd_li" wx:for="{{list}}" wx:key="id">
+                <view class="img-box">
+                    <image mode="widthFix" src="{{item.cover}}"></image>
+                    <text class="duration">{{filter.get_M_S(item.duration / 1000)}}</text>
+                </view>
+                <view class="remd_text">{{item.name}}</view>
+            </navigator>
+        </view>
+    </view>
+</view>

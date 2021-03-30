@@ -1,0 +1,62 @@
+.m-input .icon-sousuo {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  margin: 0 8px;
+  vertical-align: middle;
+  font-size: 13px;
+  color: #b5b3b3;
+}
+.m-input {
+  padding: 15px 10px;
+}
+.m-input:after {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.m-input .inputcover {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background: #ebecec;
+  border-radius: 30px;
+}
+.m-input .u-svg-srch {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+.m-input .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+}
+.m-input .u-svg-empty {
+  display: none;
+  vertical-align: middle;
+}
+.m-input .u-svg-empty.z-show {
+  display: inline-block;
+}
+.m-input .input {
+  width: 100%;
+  height: 30px;
+  line-height: 18px;
+  background: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  color: #333;
+}
+.m-input .input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #c9c9c9;
+}
+.m-input .input::-webkit-search-cancel-button {
+  display: none;
+}

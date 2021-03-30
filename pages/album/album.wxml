@@ -1,0 +1,30 @@
+<view class="music-list">
+    <view class="list">
+        <view class="music-list-wrapper">
+            <view>
+                <view class="bg-image" style="background-image:url({{coverImgUrl}})">
+                    <view class="filter"></view>
+                    <view class="text">
+                        <view class="list-title">{{name}}</view>
+                    </view>
+                </view>
+                <view class="song-list-wrapper">
+                    <view class="sequence-play">
+                        <i class="iconfont icon-bofang"></i>
+                        <text class="text">播放全部</text>
+                        <text class="count">(共{{songList.length}})</text>
+                    </view>
+                    <view class="song-list">
+                        <view class="item" wx:for="{{songList}}" wx:key="id" bind:tap="ontap" data-song="{{item}}">
+                            <view class="count">{{index+1}}</view>
+                            <view class="content">
+                                <view class="name">{{item.name}}</view>
+                                <view class="desc">{{item.singer}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

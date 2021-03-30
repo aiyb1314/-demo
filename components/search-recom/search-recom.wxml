@@ -1,0 +1,11 @@
+<view class="m-recom">
+    <view class="title f-bd f-bd-btm f-thide">
+        搜索“<slot></slot>”
+    </view>
+    <view>
+        <view class="recomitem" wx:for="{{searchRecom}}" wx:key="keyword" bind:tap="search" data-keyword="{{item.keyword}}">
+            <i class="u-svg u-svg-search i"></i>
+            <text class="f-bd f-bd-btm f-thide span">{{item.keyword}}</text>
+        </view>
+    </view>
+</view>

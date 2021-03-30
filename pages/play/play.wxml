@@ -1,0 +1,44 @@
+<view class="play-wrap">
+    <view class="head">
+        <view class="info">
+            <view class="name">{{currentSong.name}}</view>
+            <view class="singer">{{currentSong.singer}}</view>
+        </view>
+    </view>
+    <view class="background-wrap">
+        <view class="background" style="background-image:url({{currentSong.picUrl}})"></view>
+        <view class="mask"></view>
+    </view>
+    <view class="pic">
+        <view class="plate-wrap spin {{playSatu ? '':'animation-play-paused'}}">
+            <view class="img-box">
+                <image mode="widthFix" src="{{currentSong.picUrl}}" />
+            </view>
+        </view>
+    </view>
+    <view class="botton">
+        <view class="progress-bar-wrap">
+            <view class="time time-progress"></view>
+            <view class="progress-bar"></view>
+            <view class="time duration"></view>
+        </view>
+        <view class="control">
+            <view class="item" bind:tap="select_palyMode">
+                <icon class="iconfont {{playMode_class}}"></icon>
+            </view>
+            <view class="item" bind:tap="prevSong">
+                <icon class="iconfont icon-shangyishou"></icon>
+            </view>
+            <view class="item" bind:tap="selectPlay">
+                <icon class="iconfont {{playSatu ? 'icon-zantingtingzhi' : 'icon-bofang'}}"></icon>
+            </view>
+            <view class="item" bind:tap="nextSong">
+                <icon class="iconfont icon-xiayishou-copy"></icon>
+            </view>
+            <view class="item" bind:tap="on_playList">
+                <icon class="iconfont icon-caidan"></icon>
+            </view>
+        </view>
+    </view>
+    <play-list id="play-list"></play-list>
+</view>

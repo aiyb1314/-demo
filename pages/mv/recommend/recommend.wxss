@@ -1,0 +1,73 @@
+.m-homeremd .remd_tl {
+  position: relative;
+  padding-left: 18rpx;
+  margin-bottom: 28rpx;
+  font-size: 34rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.m-homeremd .remd_songs {
+  overflow: hidden;
+  padding: 0 20rpx;
+}
+.m-homeremd .remd_songs .remd_ul {
+  margin: 0 -4rpx;
+  display: flex;
+  flex-flow: row wrap;
+}
+.m-homeremd .remd_songs .remd_ul .remd_li {
+  flex: 0 0 33.33%;
+  padding: 0 4rpx;
+  margin-bottom: 32rpx;
+}
+.m-homeremd .remd_songs .remd_ul .remd_li .img-box {
+  height: 130rpx;
+  overflow: hidden;
+  position: relative;
+}
+.m-homeremd .remd_songs .remd_ul .remd_li .img-box .remd_lnum {
+  position: absolute;
+  right: 10rpx;
+  top: 4rpx;
+  z-index: 3;
+  padding-left: 26rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 22rpx 20rpx;
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.15);
+}
+.m-homeremd .remd_songs .remd_ul .remd_li .img-box .u-earp {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB/klEQVR4Xu3bzStEURgG8Of9QyxsWVra2Ph3bC2tfKRkQhYshCYpWUgkG/KRFBskSU2SJLKyIDk69b4lpe7M3I9z7nPveqbm+c2Zuee+73sE5JeQ50cFUK0AcoHEPwHnXD+AIQC9AI4A1ERkLXa/ZgAuAXT/CTwPYEREGrFCNAPg/gl5D2BYROZiREgDwHKvK8R5TBBpAvjc74owGgtC2gCWe18hdkOHyArAck8oxFuoEFkD+NwXirAaIkIeAJZ7QSHuQoLIE8DnflSE2VAQ8gaw3BsKcVo0RFEAPveHR1CI76IgigSwzIe6nd4uAiEEAMtd09XwkidESAA+97Ui1PNCCA3Aci8rxE3WEKEC+NzPijCVJULIAJZ7SyGOs4CIAcDn/tJbpi++fKYJEQuAZT7R1bCZFkJsAJZ7RiGe2oWIFcDnvlWExXYQYgaw3CsKcdUKRBkAfO5XRZhsFqEsAJZ7RyEOkkKUDcByD4rIeBKEsgI8iEgHM0BDRDqZAQZEZJoRgPZPkPo2SLsRot4K0z4M0T4OUxdEaEti1EVR2rI4dWOEtjVG2xylbo/TDkhQj8jQDklRj8nRDkrSjspSD0vTjsvTHJjwW1Z/Xuj3RXVkpgvAEoAeAGcAxqgOTdnX7pzrE5G9JF2XGF6TuDkaQ5hWPmMF0Ipamd5DvwJ+AArCSFDedQsxAAAAAElFTkSuQmCC);
+}
+.m-homeremd .remd_songs .remd_ul .remd_li .img-box .duration {
+  position: absolute;
+  right: 10rpx;
+  bottom: 4rpx;
+  z-index: 3;
+  color: #fff;
+  font-size: 24rpx;
+}
+.m-homeremd .remd_songs .remd_ul .remd_li .img-box:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40rpx;
+  z-index: 2;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+.m-homeremd .remd_songs .remd_ul .remd_li .remd_text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-top: 12rpx;
+  min-height: 60rpx;
+  line-height: 1.2;
+  font-size: 26rpx;
+  word-break: break-all;
+}

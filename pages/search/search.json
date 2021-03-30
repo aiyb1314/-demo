@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "search-box":"/components/search-box/search-box",
+    "search-recom":"/components/search-recom/search-recom",
+    "search-result":"/components/search-result/search-result",
+    "search-default":"/components/search-default/search-default",
+    "play-tabbar": "/components/play_tabbar/play_tabbar"
+  },
+  "navigationBarTitleText": "搜索"
+}

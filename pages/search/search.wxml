@@ -1,0 +1,9 @@
+<search-box id="search-box" bind:input="inputs" bind:enter="enter" bind:focus="focus"></search-box>
+
+<search-default wx:if="{{searchStatus == 'default'}}" bind:search="search"></search-default>
+<search-recom wx:if="{{searchStatus == 'recom'}}" searchRecom="{{searchRecom}}" bind:search="search">
+    {{keyword}}
+</search-recom>
+<search-result wx:if="{{searchStatus == 'result'}}" multimatch="{{multimatch}}" songList="{{songList}}" songCount="{{songCount}}" keyword="{{keyword}}"></search-result>
+
+<play-tabbar></play-tabbar>

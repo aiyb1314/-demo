@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "play-tabbar": "/components/play_tabbar/play_tabbar"
+  },
+  "navigationBarTitleText": "歌单"
+}

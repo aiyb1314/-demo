@@ -1,0 +1,9 @@
+<view class="m-input f-bd f-bd-btm">
+    <view class="inputcover">
+        <i class="iconfont icon-sousuo"></i>
+        <input id="input" value="{{value}}" bindconfirm="enter" bindinput="input" bindfocus="focus" focus="{{isFocus}}" type="search" class="input" placeholder="{{placeholder}}" />
+        <view class="close" wx:if="{{display}}" bind:tap="clear">
+            <i class="iconfont icon-quxiao"></i>
+        </view>
+    </view>
+</view>

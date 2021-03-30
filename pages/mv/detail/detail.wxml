@@ -1,0 +1,39 @@
+<!-- pages/mv/detail/detail.wxml -->
+<view class="m-mv">
+    <video id="myVideo" class="video" src="{{mv_url}}" ></video>
+    <view class="m-titlemv">
+        <view class="tt">
+            <view class="name f-brk">
+                <text>{{name}}</text>
+            </view>
+        </view>
+        <view class="singer" >
+            歌手：<text wx:for="{{artists}}" wx:key="id" data-id="{{item.id}}" bind:tap="go_album">{{item.name}}-</text>
+        </view>
+
+        <view class="info">
+            <view class="time">发布时间：{{publishTime}}</view>
+            <view class="played">
+                播放：{{playCount}}
+            </view>
+        </view>
+        <view class="intrmv">
+            {{desc}}
+        </view>
+    </view>
+    <view class="m-related m-related-mv">
+        <view class="tt">相关推荐</view>
+        <view class="m-list m-list-mv">
+            <view class="item" wx:for="{{similar_list}}" wx:key="id" bind:tap="go_detail" data-id="{{item.id}}">
+                <view class="cvr">
+                    <image mode="widthFix" class="imge" src="{{item.cover}}"></image>
+                    <view class="count"><span class="num">{{item.playCount}}</span></view>
+                </view>
+                <view class="cnt f-bd f-bd-btm">
+                    <view class="title f-thide2 f-brk">{{item.name}}</view>
+                    <view class="singer f-thide">{{item.duration}}，by {{item.artistName}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

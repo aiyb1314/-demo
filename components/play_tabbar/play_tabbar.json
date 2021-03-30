@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "play-list": "/components/play_list/play_list"
+  }
+}

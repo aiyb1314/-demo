@@ -1,0 +1,26 @@
+<!-- index.wxml -->
+<view class="m-homeremd">
+    <!-- 搜索 -->
+    <search-navigator></search-navigator>
+    <!-- swiper -->
+    <swiper style="height:280rpx" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+        <block wx:for="{{imgUrls}}" wx:key="targetId">
+            <swiper-item>
+                <image mode="widthFix" class="swiper-image" src="{{item.imageUrl}}" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- recommend -->
+    <view class="remd_tl">推荐歌单</view>
+    <view class="remd_songs">
+        <view class="remd_ul">
+            <navigator url="/pages/songList/songList?id={{item.id}}"  class="remd_li" wx:for="{{recommend_list}}" wx:key="id">
+                <view class="img-box">
+                    <text class="u-earp remd_lnum">{{item.playCount}}</text>
+                    <image mode="widthFix" src="{{item.picUrl}}"></image>
+                </view>
+                <view class="remd_text">{{item.name}}</view>
+            </navigator>
+        </view>
+    </view>
+</view>

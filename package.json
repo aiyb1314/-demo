@@ -1,0 +1,17 @@
+{
+  "name": "wx-music",
+  "version": "1.0.0",
+  "description": "vx=music",
+  "main": "app.js",
+  "dependencies": {
+    "miniprogram-computed": "^2.1.1",
+    "mobx-miniprogram": "^4.13.2",
+    "mobx-miniprogram-bindings": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jabin",
+  "license": "ISC"
+}

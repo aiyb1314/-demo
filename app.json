@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/order/order",
+    "pages/test/test",
+    "pages/play_time/play_time",
+    "pages/login/login",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/songList/songList",
+    "pages/play/play",
+    "pages/search/search",
+    "pages/album/album",
+    "pages/mv/recommend/recommend",
+    "pages/mv/detail/detail"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#ccffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "慧停车"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/play_time/play_time",
+        "text": "娱乐",
+        "iconPath": "/static/images/tabs/play.png",
+        "selectedIconPath": "/static/images/tabs/play_on.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/static/images/tabs/order.png",
+        "selectedIconPath": "/static/images/tabs/order_on.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/person.png",
+        "selectedIconPath": "/static/images/tabs/person_on.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.12",
+      "provider": "wx50b5593e81dd937a"
+    },
+      "chooseLocation": {
+      "version": "1.0.5",
+      "provider": "wx76a9a06e5b4e693e"
+      }
+  }
+}

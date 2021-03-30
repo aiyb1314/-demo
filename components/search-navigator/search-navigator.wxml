@@ -1,0 +1,6 @@
+<view class="m-input f-bd f-bd-btm">
+    <view class="inputcover">
+        <i class="iconfont icon-sousuo"></i>
+        <input bind:tap="focus" type="search" class="input" placeholder="{{placeholder}}" />
+    </view>
+</view>

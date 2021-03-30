@@ -1,0 +1,23 @@
+<view class="m-default">
+    <view class="m-hotlist">
+        <view class="title">热门搜索</view>
+        <view class="list">
+            <view class="item f-bd f-bd-full" wx:for="{{host_search}}" wx:key="first" bind:tap="search" data-keyword="{{item.first}}">
+                <a class="link" href="javascript:void(0);">{{item.first}}</a>
+            </view>
+        </view>
+    </view>
+    <view class="m-history">
+        <view class="list">
+            <view class="item" wx:for="{{Song_history}}" wx:key="item"  wx:for-index="index">
+                <i class="iconfont icon-lishi"></i>
+                <view class="histyr f-bd f-bd-btm">
+                    <text class="link f-thide" bind:tap="search" data-keyword="{{item}}">{{item}}</text>
+                    <view class="close" bind:tap="delete_history" data-index="index">
+                        <i class="iconfont icon-x"></i>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
